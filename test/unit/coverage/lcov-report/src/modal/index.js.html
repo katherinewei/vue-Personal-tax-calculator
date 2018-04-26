@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/modal/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/modal</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/77</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/50</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Vue fr<span class="cstat-no" title="statement not covered" >om 'vue'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span></span></span>
+import {getRep<span class="cstat-no" title="statement not covered" >lUrl} from '../utils/helper</span>'
+import {getAccess<span class="cstat-no" title="statement not covered" >Token, setAccessToken, </span>setAccess<span class="fstat-no" title="function not covered" >DeviceId} from './valid</span>ator'<span class="cstat-no" title="statement not covered" ></span>
+// js 获取url参数
+function <span class="fstat-no" title="function not covered" >getQueryString </span>(name) {
+  var reg = <span class="cstat-no" title="statement not covered" >new RegExp('(^|&amp;)' + name + '=([^&amp;]*)(&amp;|$)', 'i')</span>
+  var r = <span class="cstat-no" title="statement not covered" >window.location.search.substr(1).match(reg)</span>
+<span class="cstat-no" title="statement not covered" >  if (r != null) <span class="cstat-no" title="statement not covered" >return unescape(r[2])</span></span>
+<span class="cstat-no" title="statement not covered" >  return null</span>
+}
+&nbsp;
+const request <span class="cstat-no" title="statement not covered" >= (url, p<span class="fstat-no" title="function not covered" >ayload, </span>response, id) =&gt; {</span>
+  const token <span class="cstat-no" title="statement not covered" >= getQueryString('token'</span>)
+<span class="cstat-no" title="statement not covered" >  if (token &amp;&amp; !(getAccessToken() &amp;&amp; getAccessToken() === token)) {</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.setItem('saveTokenTime', new Date().getTime())</span>
+<span class="cstat-no" title="statement not covered" >    setAccessToken(token)</span>
+  }
+  let saveTokenTime = <span class="cstat-no" title="statement not covered" >localStorage.getItem('saveTokenTime')</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!getAccessToken() || !saveTokenTime || (saveTokenTime &amp;&amp; new Date().getTime() - saveTokenTime &gt; 5 * 24 * 60 * 60 * 1000)) {</span>
+    let pathname = <span class="cstat-no" title="statement not covered" >location.href</span>
+<span class="cstat-no" title="statement not covered" >    if (getQueryString('deviceId')) {         // 线上</span>
+<span class="cstat-no" title="statement not covered" >      setAccessDeviceId(getQueryString('deviceId'))</span>
+<span class="cstat-no" title="statement not covered" >      pathname = pathname + '?deviceId=' + getQueryString('deviceId')</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (getQueryString('fixed')) {     // 特定机台</span>
+<span class="cstat-no" title="statement not covered" >      sessionStorage.setItem('specifiedMachine', true)</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (getQueryString('preview')) {     // 预览</span>
+<span class="cstat-no" title="statement not covered" >      pathname += '&amp;preview=1'</span>
+    }
+<span class="cstat-no" title="statement not covered" >    setTimeout(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      location.href = 'http://192.168.2.111:5020/v2/bind/micro_shop/?redirect_url=' + encodeURIComponent(pathname)</span>
+    }, 100)
+<span class="cstat-no" title="statement not covered" >    return</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  Vue.prototype.$http.defaults.headers.common['Authorization'] = 'JWT ' + getAccessToken()</span>
+<span class="cstat-no" title="statement not covered" >  Vue.$vux.loading.show({</span>
+    text: '正在加载中'
+  })
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (id) {</span>
+<span class="cstat-no" title="statement not covered" >    url = getReplUrl(url, id)</span>
+  }
+  const success <span class="cstat-no" title="statement not covered" >= (res) =<span class="fstat-no" title="function not covered" >&gt; {</span></span>
+    const {<span class="cstat-no" title="statement not covered" >data} = r</span>es
+<span class="cstat-no" title="statement not covered" >    Vue.$vux.loading.hide()</span>
+<span class="cstat-no" title="statement not covered" >    if (data.code) {</span>
+<span class="cstat-no" title="statement not covered" >      Vue.$vux.toast.show({</span>
+        text: data.code + ' : ' + data.message,
+        type: 'cancel',
+        time: 3000
+      })
+    } else {
+<span class="cstat-no" title="statement not covered" >      response(data)</span>
+    }
+  }
+  const error <span class="cstat-no" title="statement not covered" >= () =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >    Vue.$vux.toast.show({</span>
+      text: '获取失败',
+      type: 'cancel'
+    })
+  }
+<span class="cstat-no" title="statement not covered" >  return {urlD: url, payloadD: payload, success, error}</span>
+}
+export const requ<span class="cstat-no" title="statement not covered" >estGet = (data) =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+  const <span class="cstat-no" title="statement not covered" >{url, pay</span>load, resp<span class="cstat-no" title="statement not covered" >onse, id} = d</span>ata<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >  const {urlD, payloadD, success, erro</span>r} = re<span class="cstat-no" title="statement not covered" >quest(url, pay</span>load, respo<span class="cstat-no" title="statement not covered" >nse, id)<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+<span class="cstat-no" title="statement not covered" >  Vue.http.get(urlD, {params: payloadD}).then(success, error)</span>
+}
+export const request<span class="cstat-no" title="statement not covered" >Delete = (data) =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+  const <span class="cstat-no" title="statement not covered" >{url, pay</span>load, resp<span class="cstat-no" title="statement not covered" >onse, id} = d</span>ata<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >  const {urlD, success, error} = reque</span>st(url,<span class="cstat-no" title="statement not covered" > payload, respo</span>nse, id)<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >  Vue.http.delete(urlD).then(success, error)</span>
+}
+export const reque<span class="cstat-no" title="statement not covered" >stPost = (data) =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+  const <span class="cstat-no" title="statement not covered" >{url, pay</span>load, resp<span class="cstat-no" title="statement not covered" >onse, id} = d</span>ata<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >  const {urlD, payloadD, success, erro</span>r} = re<span class="cstat-no" title="statement not covered" >quest(url, payl</span>oad, respon<span class="cstat-no" title="statement not covered" >se, id)<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+<span class="cstat-no" title="statement not covered" >  Vue.http.post(urlD, {...payloadD}).then(success, error)</span>
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 29 2018 12:19:33 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/App.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">src</a> App.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;<span class="cstat-no" title="statement not covered" >t<span class="fstat-no" title="function not covered" >em</span>plate&gt;</span>
+  &lt;div id="app"&gt;
+    &lt;loading v-model="isLoading"&gt;&lt;/loading&gt;
+<span class="cstat-no" title="statement not covered" >    &lt;div class="container"&gt;&lt;router-view&gt;&lt;/router-view&gt;&lt;/div&gt;</span>
+    &lt;footer-nav :showNav="showNav" :selectIndex="selectIndex"&gt;&lt;/footer-nav&gt;
+&nbsp;
+  &lt;/div&gt;
+&lt;/template&gt;<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+&lt;script&gt;<span class="cstat-no" title="statement not covered" ></span>
+  import { Loading } from 'vux'
+  import { <span class="cstat-no" title="statement not covered" >mapState } from</span> 'vuex'
+  import FooterNav from './components/footerNav.vue'
+  export def<span class="cstat-no" title="statement not covered" >ault {</span>
+    name: 'app',
+    data () {<span class="cstat-no" title="statement not covered" ></span>
+      return {
+        showNav: t<span class="cstat-no" title="statement not covered" >rue,</span>
+        selectIndex: 0
+      }<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+    },
+<span class="cstat-no" title="statement not covered" >    components: {</span>
+      FooterNav,
+      Loading<span class="fstat-no" title="function not covered" ></span>
+<span class="cstat-no" title="statement not covered" >    },</span>
+    computed: {
+      ...mapState({
+        isLoading: state =&gt; state.vux.isLoading
+      })
+    },
+    watch: {
+      // 如果路由有变化，会执行该方法
+      '$route': function () {
+        this.routeChange()
+      }
+    },<span class="fstat-no" title="function not covered" ></span>
+    me<span class="cstat-no" title="statement not covered" >thods: {</span>
+      routeChange () {
+        let path = this.$route.path
+        if (path === '/micro' || path === '/micro/market' || path.indexOf('/micro/market/') &gt; -1 || path === '/user' || path === '/micro/cart') {
+          this.showNav = true
+          if (path === <span class="fstat-no" title="function not covered" >'/micro</span>') {
+<span class="cstat-no" title="statement not covered" >            this.selectInd</span>ex = 0
+            localStorage.setItem('entry', 'device')
+          } else if (path === '/micro/market' || path.indexOf('/micro/market/') &gt; -1) {
+            this.selectIndex = 1
+            localStorage.s<span class="fstat-no" title="function not covered" >etItem('entr</span>y', 'devices')
+          } else <span class="cstat-no" title="statement not covered" >if (path === '/us</span>er') {
+<span class="cstat-no" title="statement not covered" >            this.selectIndex = 2</span>
+<span class="cstat-no" title="statement not covered" >          }</span>
+<span class="cstat-no" title="statement not covered" >        } else {</span>
+<span class="cstat-no" title="statement not covered" >          this.showNav = false</span>
+        }<span class="cstat-no" title="statement not covered" ></span>
+      }<span class="cstat-no" title="statement not covered" ></span>
+    },<span class="cstat-no" title="statement not covered" ></span>
+    create<span class="cstat-no" title="statement not covered" >d () {</span>
+      this.rout<span class="cstat-no" title="statement not covered" >eChange()</span>
+    },<span class="cstat-no" title="statement not covered" ></span>
+    mounted () {
+      window.setTimeout(() =&gt; {
+<span class="cstat-no" title="statement not covered" >        document.documentEleme</span>nt.scrollTop = 0
+        document.body.scrollTop = 0
+      }, 250)
+    }
+  }<span class="fstat-no" title="function not covered" ></span>
+&lt;/sc<span class="cstat-no" title="statement not covered" >ript&gt;</span>
+&nbsp;
+&lt;style lang="less"&gt;<span class="fstat-no" title="function not covered" ></span>
+@imp<span class="cstat-no" title="statement not covered" >ort '~vux/src/styl<span class="fstat-no" title="function not covered" >es</span>/reset.less';</span>
+@impor<span class="cstat-no" title="statement not covered" >t url('//at.alicdn.com/t/font_215607_8sb</span>74x37206hia4i.css');
+body {<span class="cstat-no" title="statement not covered" ></span>
+  background-color: #f4f4f4;
+}
+.container{
+  padding-bottom: 50px;
+}
+  a{
+    text-decoration: none;
+  }
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 29 2018 12:19:33 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>

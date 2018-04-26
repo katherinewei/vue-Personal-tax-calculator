@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/Product.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> Product.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/41</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;<span class="cstat-no" title="statement not covered" >t<span class="fstat-no" title="function not covered" >em</span>plate&gt;</span>
+  &lt;div&gt;
+    产品详情
+<span class="cstat-no" title="statement not covered" >  &lt;/div&gt;</span>
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+  import UR<span class="cstat-no" title="statement not covered" >L from '@/modal/url'</span>
+  import {requestGet} from '@/modal/index'
+  import {ge<span class="cstat-no" title="statement not covered" >tAccessDeviceId, getAccessOpe</span>ratorId} from '@/modal/validator'
+  import {specifiedMachine} from '@/utils/helper'
+  export defa<span class="cstat-no" title="statement not covered" >ult {</span>
+&nbsp;
+    data () {<span class="cstat-no" title="statement not covered" ></span>
+      return {
+        itemPr<span class="cstat-no" title="statement not covered" >oduct: {},</span>
+        marketing: []
+      }<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+    },
+    mounted () {
+      this.getProduct()
+    },
+    methods: {
+      getProduct: function () {
+        let url = URL.devices_items
+        const entry = localStorage.getItem('entry')
+<span class="cstat-no" title="statement not covered" >        let isMicro = entry === 'device'</span>
+        let devic<span class="fstat-no" title="function not covered" >eId =</span> getAccessDeviceId()
+<span class="cstat-no" title="statement not covered" >        let productId = this.$route.query.id</span>
+        let id = deviceId
+        let payload = {product_id: productId}
+        let market = this.$route.query.activity
+        isMicro = isMicro &amp;&amp; !specifiedMachine()
+        if (isMicro <span class="fstat-no" title="function not covered" >|| marke</span>t) {
+<span class="cstat-no" title="statement not covered" >          id = productI</span>d
+          payload = {operator_id: getAccessOperatorId()}
+          if (isMicro) {
+            url = URL.store_product
+          } else {<span class="fstat-no" title="function not covered" ></span>
+            url = <span class="cstat-no" title="statement not covered" >URL.s</span>tore_marketing
+          }
+        }<span class="cstat-no" title="statement not covered" ></span>
+        const resp<span class="cstat-no" title="statement not covered" >onse = (res) =&gt; {</span>
+          this.itemP<span class="cstat-no" title="statement not covered" >roduct = isMicro ||</span> market ? res : res.items[0]
+          if (market <span class="cstat-no" title="statement not covered" >&amp;&amp; market === 'bulk') {</span>
+            this.getMa<span class="cstat-no" title="statement not covered" >rketingDetail(product</span>Id)
+          }<span class="cstat-no" title="statement not covered" ></span>
+        }<span class="cstat-no" title="statement not covered" ></span>
+        const resul<span class="cstat-no" title="statement not covered" >t = {url, payload, id, resp</span>onse}
+<span class="cstat-no" title="statement not covered" >        requestGet(result)</span>
+<span class="cstat-no" title="statement not covered" >      },</span>
+      ge<span class="cstat-no" title="statement not covered" >tMarketingDetail</span>: (id) =&gt; {
+<span class="cstat-no" title="statement not covered" >        const response = (res) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          this.marketing = res</span>
+        }<span class="cstat-no" title="statement not covered" ></span>
+        const Categories = {url: URL.store_group_buy, payload: {operator_id: getAccessOperatorId(), marketing_id: id}, response}
+        re<span class="cstat-no" title="statement not covered" >questGet(Categories)</span>
+      }
+    }
+  }<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+&lt;/script<span class="cstat-no" title="statement not covered" >&gt;</span>
+<span class="cstat-no" title="statement not covered" ></span>
+&lt;style&gt;<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+&lt;/style&gt;
+<span class="cstat-no" title="statement not covered" ></span></pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 29 2018 12:19:33 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>
